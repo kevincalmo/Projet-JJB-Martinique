@@ -2,3 +2,112 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/******************************* Header **********************************/ 
+video{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.navBar{
+    padding: 2%;
+    position: absolute;
+    top:10px;
+    background: white;
+    height: 100%;
+    width: 250px;
+    margin-top: -3%;
+    opacity: 0.8;
+    text-align: center;
+    left: -300px;
+    transition: 1s ease-in-out;
+}
+
+.logo{
+    font-size: 2.5rem;
+}
+.list{
+    list-style: none;
+}
+.item-list{
+    font-size: 2.2em;
+    cursor: pointer;
+    
+}
+.item-list:hover{
+    color: tomato;
+    font-size: 2.6em;
+    text-shadow: 1px 1px 5px black;
+    transition: 0.5s ease-in;
+}
+.toggle-btn{
+    position: absolute;
+    top: 30px;
+    left: 310px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    transition: 0.5s ease-in;
+}
+
+.toggle-btn span {
+    width: 60px;
+    height: 10px;
+    background: white;
+    display: block;
+    margin-top: 5px;
+    
+}
+
+.active{
+    left: 0px;
+
+}
+
+
+@media only screen and (min-width:700px){
+   
+   body{
+       overflow-x: hidden;
+   }
+    .navBar{
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 5vh;
+        margin-top: 3px;
+    }
+
+    .logo{
+        font-size: 1.6em;
+        margin-left: 10%;
+    }
+    .list{
+        width: 100%;
+    }
+    .item-list{
+        display: inline;
+        font-size: 1.8em;
+        margin-left: 20px;
+        
+    }
+    .item-list:hover{
+        font-size: 1.7rem;
+    }
+    .toggle-btn span {
+        display: none;
+        cursor: none;
+
+    }
+}
+
+@media only screen and (min-width:1000px){
+   
+  
+    .item-list{
+        margin-left: 30px;
+    }
+}
