@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 body{
     margin: 0;
     padding: 0;
@@ -66,9 +68,86 @@ video{
 }
 
 
+
+
+/******************************* MAIN **********************************/ 
+.color{
+background: rgba(179, 179, 182,0.3);
+margin-top: 30px;
+margin-bottom: 5px;
+padding: 1%;
+}
+
+.quote{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+}
+
+.color2{
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding: 3%;
+   
+    }
+
+.quote,h2,h3{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about-jjb img {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.about-jjb p, .practice-jjb, .dojo-jjb {
+    text-align: justify;
+    padding: 2%;
+}
+.card-presentation{
+    margin: 10%;
+}
+.card-icon img{
+    width: 100px;
+    height: 100px;
+    margin-left: 40%;
+    margin-bottom: -5%;
+}
+.separation{
+    background: url(./media/wp2336705.jpg) no-repeat fixed center;
+    height: 30vh;
+    background-size: cover;
+   
+}
+.contact{
+    background: rgba(179, 179, 182,0.3);
+    
+}
+.contact input, textarea {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10px;
+   height: 30px;
+   width: 80%;
+}
+
+.contact button {
+    width: 100px;
+    height: 30px;
+    margin :5%;
+    background: rgb(5, 184, 5);
+    border-radius: 10%;
+    box-shadow: 5px -3px 1px green;
+    border: none;
+    color: ivory;
+}
+
+/************************* MediaQueries ****************************************/
 @media only screen and (min-width:700px){
    
-   body{
+  body{
        overflow-x: hidden;
    }
     .navBar{
@@ -102,6 +181,8 @@ video{
         cursor: none;
 
     }
+
+    
 }
 
 @media only screen and (min-width:1000px){
@@ -110,35 +191,22 @@ video{
     .item-list{
         margin-left: 30px;
     }
-}
 
-/******************************* MAIN **********************************/ 
-.color{
-background: rgba(179, 179, 182,0.3);
-margin-top: 30px;
-margin-bottom: 5px;
-padding: 5%;
-}
 
-.color2{
-    color: white;
-    margin-top: 30px;
-    margin-bottom: 5px;
-    padding: 5%;
+    .practice-jjb{
+        padding: unset;
+        display: block;
+        padding-left: 5%;
+        padding-right: 15%;
+    }
+    .practice-jjb article {
+        width: 70vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:nowrap;
     }
 
-.centre,h2,h3{
-    text-align: center;
-    margin-top: 30px;
-}
-
-.about-jjb img {
-    width: 100%;
-}
-
-.separation{
-    background: url(./media/wp2336705.jpg) no-repeat fixed center;
-    height: 30vh;
-    background-size: cover;
-   
+    .practice-jjb img {
+        margin: unset;
+    }
 }
