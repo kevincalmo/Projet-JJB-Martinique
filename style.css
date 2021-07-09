@@ -4,14 +4,41 @@ body{
     margin: 0;
     padding: 0;
 }
+.returnBtn{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+   z-index: 2;
+}
 
+.returnBtn :hover{
+    transition: 0.5s ease-in-out;
+    transform: translateY(-10px);
+}
+
+.returnBtn img{
+    width: 50px;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.3s;
+}
 /******************************* Header **********************************/ 
 
 
-video{
-    z-index: -1;
-    width: 100%;
-    height: 100%;
+header{
+    background: url(./media/1960756.jpg) center;
+    background-size: cover;
+    height: 100vh;
 }
 
 .navBar{
@@ -120,6 +147,14 @@ h2{
     text-align: justify;
     padding: 2%;
 }
+
+.about-jjb iframe{
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+}
+
 .card-presentation{
     margin: 10%;
 }
