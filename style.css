@@ -6,6 +6,8 @@ body{
 }
 
 /******************************* Header **********************************/ 
+
+
 video{
     z-index: -1;
     width: 100%;
@@ -20,7 +22,7 @@ video{
     height: 100%;
     width: 150px;
     margin-top: -3%;
-    opacity: 0.8;
+    
     text-align: center;
     left: -200px;
     transition: 1s ease-in-out;
@@ -44,8 +46,7 @@ video{
     font-size: 1.5em;
     text-shadow: 1px 1px 5px black;
     transition: 0.5s ease-in;
-    border: 1px solid black;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 0px 0px 10px black;
 }
 .toggle-btn{
     position: absolute;
@@ -69,6 +70,10 @@ video{
 .active{
     left: 0px;
 
+}
+
+.navbar .active ~ body {
+    opacity: 0.8;
 }
 
 
@@ -130,9 +135,18 @@ text-align: center;
 }
 
 .jjb-club {
-    display: block;
+   /* display: block;
     margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 5%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jjb-club iframe {
+   
+   
 }
 
 .separation{
@@ -173,6 +187,8 @@ textarea {
     background: rgb(5, 184, 5);
     color: ivory;
 }
+
+/*********************************** FOOTER ***********************************/
 
 footer {
     text-align: center;
