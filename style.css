@@ -4,6 +4,17 @@ body{
     margin: 0;
     padding: 0;
 }
+
+a,
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: tomato;
+}
+
 .returnBtn{
     position: fixed;
     bottom: 0;
@@ -70,7 +81,7 @@ header{
 }
 .item-list:hover{
     color: tomato;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-shadow: 1px 1px 5px black;
     transition: 0.5s ease-in;
     box-shadow: 0px 0px 10px black;
@@ -99,9 +110,6 @@ header{
 
 }
 
-.navbar .active ~ body {
-    opacity: 0.8;
-}
 
 
 
@@ -246,6 +254,8 @@ footer {
         width: 100vw;
         height: 5vh;
         margin-top: 3px;
+        background: none;
+        color: white;
     }
 
     .logo{
@@ -259,7 +269,13 @@ footer {
         display: inline;
         font-size: 1.8em;
         margin-left: 20px;
-        
+    }
+
+    .item-list a{
+        color: white;
+    }
+    .item-list a:hover{
+        color: tomato;
     }
     .item-list:hover{
         font-size: 1.7rem;
