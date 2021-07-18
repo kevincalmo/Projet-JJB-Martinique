@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: tomato;
+}
+
+ul {
+    list-style: none;
+}
+
+.returnBtn{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+   z-index: 2;
+}
+
+.returnBtn :hover{
+    transition: 0.5s ease-in-out;
+    transform: translateY(-10px);
+}
+
+.returnBtn img{
+    width: 50px;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.3s;
+}
+/******************************* Header **********************************/ 
+
+
+.navBar{
+    padding: 2%;
+    position: absolute;
+    top:10px;
+    background: whitesmoke;
+    height: 30%;
+    width: 150px;
+    margin-top: -3%;
+    
+    text-align: center;
+    left: -200px;
+    transition: 1s ease-in-out;
+}
+
+.logo{
+    font-size: 1.7rem;
+}
+.list{
+    list-style: none;
+}
+.item-list{
+    font-size: 1.4em;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 0.5s ease-out;
+    
+}
+.item-list:hover{
+    color: tomato;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 5px black;
+    transition: 0.5s ease-in;
+    box-shadow: 0px 0px 10px black;
+}
+.toggle-btn{
+    position: absolute;
+    top: 30px;
+    left: 210px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    transition: 0.5s ease-in;
+}
+
+.toggle-btn span {
+    width: 60px;
+    height: 10px;
+    background: #000000;
+    display: block;
+    margin-top: 5px;
+    
+}
+
+.navBar.active{
+    left: 0px;
+
+}
+
+.main-opacity{
+    opacity: 0.5;
+}
+
+
+/*********************************** MAIN ***********************************/
+main {
+    margin-top: 15%;
+}
+h1, h2{
+    text-align: center;
+    margin-inline: 20%;
+    margin-top: 5%;
+}
+h1{
+    font-family: 'Indie Flower', sans-serif;
+    margin-bottom: 5%;
+}
+p{
+    text-align: justify;
+    margin-inline: 3%;
+}
+li {
+    font-style:italic;
+    margin-inline: 2%;
+}
+img{
+    width: 100%;
+}
+
+
+
+/*********************************** FOOTER ***********************************/
+
+footer {
+    text-align: center;
+   padding-top: 1px;
+   padding-bottom: 1px;
+   margin-top: 1px;
+    background: black;
+    color: white;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+
+.footer-list .footer-link{
+    color: whitesmoke;
+}
+
+
+
+
+/************************* MediaQueries ****************************************/
+@media only screen and (min-width:700px){
+   
+    body{
+         overflow-x: hidden;
+     }
+      .navBar{
+          left: 0;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 100vw;
+          height: 5vh;
+          margin-top: 3px;
+      }
+  
+      .logo{
+          font-size: 1.6em;
+          margin-left: 10%;
+      }
+      .list{
+          width: 100%;
+      }
+      .item-list{
+          display: inline;
+          font-size: 1.8em;
+          margin-left: 20px;
+          
+      }
+      .item-list:hover{
+          font-size: 1.7rem;
+          border: unset;
+          box-shadow: unset;
+      }
+      .toggle-btn span {
+          display: none;
+          cursor: none;
+  
+      }
+
+      img{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+    }
+
+    
+      
+      
+  }
