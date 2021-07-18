@@ -44,6 +44,22 @@ a:hover{
     transform: translateY(0);
     transition: 0.3s;
 }
+
+.spin {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 /******************************* Header **********************************/ 
 header{
    /* background: url(./media/1960756.jpg) center;
