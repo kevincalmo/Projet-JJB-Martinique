@@ -55,8 +55,8 @@ header{
     padding: 2%;
     position: absolute;
     top:10px;
-    background: white;
-    height: 100%;
+    background: whitesmoke;
+    height: 30%;
     width: 150px;
     margin-top: -3%;
     
@@ -115,7 +115,11 @@ header{
 
 
 /*********************************** MAIN ***********************************/
+main {
+    margin-top: 15%;
+}
 h1{
+    font-family: 'Indie Flower',sans-serif;
     text-align: center;
     margin-inline: 20%;
 }
@@ -133,9 +137,12 @@ h1{
 
 }
 .event-body{
-    text-align: justify;
-    padding: 0 2%;
+    text-align: center;
+    margin: 0 2%;
+    font-size: xx-large;
 }
+
+
 
 /*********************************** FOOTER ***********************************/
 

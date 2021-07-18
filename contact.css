@@ -49,8 +49,8 @@ a:hover{
     padding: 2%;
     position: absolute;
     top:10px;
-    background: white;
-    height: 100%;
+    background: whitesmoke;
+    height: 30%;
     width: 150px;
     margin-top: -3%;
     
@@ -108,8 +108,11 @@ a:hover{
 }
 
 /*********************************** MAIN ***********************************/
+main {
+    margin-top: 15%;
+}
 form{
-    padding: 5%;
+    padding-inline: 5%;
 }
 input[type=text], textarea, input[type=email] {
     width: 100%;
@@ -152,6 +155,7 @@ input[type=text], textarea, input[type=email] {
     margin:0 auto;
   }
   h1  {
+      font-family: 'Indie Flower',sans-serif;
     color: #ffc800;
     height: 100%;
     text-align: center;
